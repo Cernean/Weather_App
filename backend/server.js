@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const mongose = require('mongoose');
+require('./db');
+
 // Middleware
 app.use(express.json());
 
