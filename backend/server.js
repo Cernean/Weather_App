@@ -25,6 +25,16 @@ app.post('/users', async (req, res) => {
   }
 });
 
+app.post('/location', async (req, res) => {
+  try {
+    const location = new Location(req.body);
+    await location.save();
+    res.status(201).json(location);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
 
 // Start the server
 app.listen(PORT, () => {
