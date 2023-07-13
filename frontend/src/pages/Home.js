@@ -1,11 +1,13 @@
-function Home() {
-    return (
-      <main>
-        <h1>HOME</h1>
-        <div >
-        </div>
-      </main>
-    );
-  }
+import React from 'react';
+
+const Home = () => {
+  return (
+    <div>
+      <h1>
+        Welocome to the Weather App
+      </h1>
+    </div>
+  );
+};
   
   export default Home;
