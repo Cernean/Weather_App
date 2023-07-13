@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1>
-        Welocome to the Weather App
+        Welcome to the Weather App
       </h1>
     </div>
   );

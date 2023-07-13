@@ -1,5 +1,7 @@
 import './App.css';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import SearchBar from './components/SearchBar';
+import WeatherCard from './components/WeatherCard';
 
 function App() {
   return (
