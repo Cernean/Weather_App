@@ -7,7 +7,7 @@ const UserAuth = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await axios.post('/api/signin', { email, password });
+      const response = await axios.post('https//localhost:3000/signin', { email, password });
       
       if (response.status === 200) {
         console.log('User signed in successfully');
@@ -38,4 +38,4 @@ const UserAuth = () => {
   );
 };
 
-export default UserAuthentication;
+export default UserAuth;
