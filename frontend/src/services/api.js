@@ -9,5 +9,14 @@ const fetchWeatherData = async (location) => {
   }
 };
 
-export { fetchWeatherData };
+const signInUser = async (email, password) => {
+  try {
+    const response = await axios.post('/api/signin', { email, password });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response.data.error);
+  }
+};
+
+export { fetchWeatherData, signInUser };
 

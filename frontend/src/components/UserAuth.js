@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { signInUser } from '../services/api';
 
 const UserAuth = () => {
   const [email, setEmail] = useState('');
@@ -7,13 +7,8 @@ const UserAuth = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await axios.post('/api/signin', { email, password });
-      
-      if (response.status === 200) {
-        console.log('User signed in successfully');
-      } else {
-        console.log('Sign-in failed');
-      }
+      const user = await signInUser(email, password);
+      console.log('User signed in successfully:', user);
     } catch (error) {
       console.log('Error signing in:', error);
     }
@@ -39,3 +34,4 @@ const UserAuth = () => {
 };
 
 export default UserAuth;
+
