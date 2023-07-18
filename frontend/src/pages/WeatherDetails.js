@@ -25,7 +25,7 @@ const WeatherDetails = () => {
           <p>Description: {weatherData.description}</p>
         </div>
       ) : (
-        <p>Loading weather data...</p>
+        <p>Enter a location to ger weather data</p>
       )}
     </div>
   );

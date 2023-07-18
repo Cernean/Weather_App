@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const User = require('./models/user');
 const Location = require('./models/location');
 const bodyParser = require('body-parser');
@@ -22,6 +22,12 @@ app.get('/', (req, res) => {
 app.get('/api/weather/:location', (req, res) => {
   const location = req.params.location;
   const data = weatherData[location];
+
+  if (data) {
+    res.status(200).json(data);
+  } else {
+    res.status(404).json({ error: 'Weather data not for '})
+  }
   
   if (data) {
     res.status(200).json(data);
