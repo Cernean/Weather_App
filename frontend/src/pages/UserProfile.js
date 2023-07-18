@@ -32,12 +32,6 @@ const UserProfile = () => {
           <div>
             <strong>Email:</strong> {userProfile.email}
           </div>
-          <div>
-            <strong>Age:</strong> {userProfile.age}
-          </div>
-          <div>
-            <strong>Address:</strong> {userProfile.address}
-          </div>
           {!showForm ? (
             <button onClick={() => setShowForm(true)}>Edit</button>
           ) : (
@@ -49,14 +43,6 @@ const UserProfile = () => {
               <label>
                 Email:
                 <input type="email" name="email" defaultValue={userProfile.email} />
-              </label>
-              <label>
-                Age:
-                <input type="number" name="age" defaultValue={userProfile.age} />
-              </label>
-              <label>
-                Address:
-                <input type="text" name="address" defaultValue={userProfile.address} />
               </label>
               <button type="submit">Save</button>
               <button onClick={() => setShowForm(false)}>Cancel</button>
