@@ -5,6 +5,7 @@ const User = require('./models/user');
 const Location = require('./models/location');
 const bodyParser = require('body-parser');
 const cors = require('cors')
+const path = require('path')
 
 const mongoose = require('mongoose');
 require('./db');
@@ -13,6 +14,11 @@ require('./db');
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors())
+// serve static front end in production mode
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+}
+
 
 // Routes
 app.get('/', (req, res) => {
