@@ -1,5 +1,7 @@
 # Weather App
 
+http://weatherapp-env.eba-ibzg88ts.us-east-1.elasticbeanstalk.com/
+
 The Weather App is a web application that allows users to get weather information for different locations.
 
 ## Table of Contents
@@ -9,14 +11,11 @@ The Weather App is a web application that allows users to get weather informatio
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
 - Get weather information for specific locations.
 - User authentication to access personalized data.
-- Responsive design for a seamless experience on various devices.
 
 ## Technologies Used
 
@@ -25,12 +24,11 @@ The Weather App is a web application that allows users to get weather informatio
   - HTML5
   - CSS3
   - Axios (for making API requests)
-  - Redux (optional - if used for state management)
 
 - Backend:
   - Node.js
   - Express.js
-  - MongoDB (or other suitable database for weather data storage)
+  - MongoDB 
   - Mongoose (ORM for MongoDB)
 
 ## Setup and Installation
@@ -40,7 +38,7 @@ The Weather App is a web application that allows users to get weather informatio
 3. Start the frontend and backend servers:
 
 
-The frontend will run at `http://localhost:3000`, and the backend will run at `http://localhost:5000`.
+The frontend will run at `http://localhost:3000`, and the backend will run at `http://localhost:4000`.
 
 ## Usage
 
