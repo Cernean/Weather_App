@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
-//import { useParams } from "react-router";
+import { useState } from "react";
 
 function SignUpForm() {
 
-	//const history = useHistory()
 
 	const [user, setUser] = useState({
 		firstName: '',
@@ -23,7 +21,6 @@ function SignUpForm() {
 			body: JSON.stringify(user)
 		})
 
-		//history.push(`/`)
 	}
 
 	return (

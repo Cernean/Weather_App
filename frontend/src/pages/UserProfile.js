@@ -28,7 +28,7 @@ const UserProfile = () => {
       <h2>User Profile</h2>
       <div>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/users">Profile</Link></li>
+        <li><Link to="/profile">Profile</Link></li>
       </div>
       <div>
         <strong>Username:</strong> {userProfile.username}

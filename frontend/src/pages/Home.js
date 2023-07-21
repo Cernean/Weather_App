@@ -17,7 +17,7 @@ const Home = () => {
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/users">Profile</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
             <li><Link to="/signup">SignUp</Link></li>
             <li><Link to="/login">Login</Link></li>
           </ul>
