@@ -18,6 +18,8 @@ const Home = () => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/users">Profile</Link></li>
+            <li><Link to="/signup">SignUp</Link></li>
+            <li><Link to="/login">Login</Link></li>
           </ul>
         </nav>
       </header>
@@ -28,7 +30,7 @@ const Home = () => {
       {weatherData ? (
         <div>
           <h3>{weatherData.location}</h3>
-          <p>Temperature: {weatherData.temperature}°C</p>
+          <p>Temperature: {weatherData.temperature}°F</p>
           <p>Description: {weatherData.description}</p>
         </div>
       ) : (
