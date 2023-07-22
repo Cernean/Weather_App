@@ -12,6 +12,7 @@ The Weather App is a web application that allows users to get weather informatio
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [References](#Sites-used)
+- [Bugs-and-issues]
 
 ## Features
 
@@ -30,7 +31,7 @@ The Weather App is a web application that allows users to get weather informatio
   - Node.js
   - Express.js
   - MongoDB 
-  - Mongoose (ORM for MongoDB)
+  - Mongoose
 
 ## Setup and Installation
 
@@ -56,7 +57,10 @@ The frontend will run at `http://localhost:3000`, and the backend will run at `h
 ## Refrences to Sites used.
 - https://W3schools.com/ 
 - https://Stackoverflow.com/
-- https://Google.com
+
+## Busg and issues.
+1. Were not able to Connect frontend in AWS.
+2. LogIn and SignUp not functional.
 
 
 
