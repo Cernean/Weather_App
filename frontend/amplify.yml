@@ -1,0 +1,10 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+    build:
+      commands:
+        - npm install
+    build:
+      commands:
+        - 'npm run start'
