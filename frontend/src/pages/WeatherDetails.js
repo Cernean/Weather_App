@@ -27,6 +27,10 @@ const WeatherDetails = () => {
       ) : (
         <p>Enter a location to ger weather data</p>
       )}
+      <div>
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Log In</Link>
+      </div>
     </div>
   );
 };
