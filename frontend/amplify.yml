@@ -8,3 +8,5 @@ frontend:
     build:
       commands:
         - 'npm run start'
+  artifacts:
+    baseDirectory: frontend/build 
