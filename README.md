@@ -11,6 +11,7 @@ The Weather App is a web application that allows users to get weather informatio
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [References](#Sites-used)
 
 ## Features
 
@@ -51,6 +52,12 @@ The frontend will run at `http://localhost:3000`, and the backend will run at `h
 - GET `/api/weather/:location`: Fetch weather data for a specific location.
 
 - POST `/api/signin`: Sign-in user with email and password.
+
+## Refrences to Sites used.
+- https://W3schools.com/ 
+- https://Stackoverflow.com/ 
+- https://Google.com
+
 
 
 

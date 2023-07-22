@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import UserProfile from './pages/UserProfile';
 import WeatherDetails from './pages/WeatherDetails';
-//import UserAuth from './components/UserAuth';
 import SearchBar from './components/SearchBar';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
@@ -20,7 +19,7 @@ const App = () => {
         <Route exact path="/profile" element={<UserProfile />} />
         <Route exact path="/weather/:location" element={<WeatherDetails />} />
         <Route exact path="/search" element={<SearchBar />} />
-        <Route exact path="/sign-up" element={<SignUpForm />} />
+        <Route exact path="/signup" element={<SignUpForm />} />
         <Route exact path="/login" element={<LoginForm />} />
       </Routes>
     </Router>
